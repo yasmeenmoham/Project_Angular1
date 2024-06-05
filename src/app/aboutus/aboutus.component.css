@@ -1,0 +1,171 @@
+/* CSS for the background image */
+.about-us {
+  position: relative;
+  height: 100vh; /* Set height to viewport height for full screen */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('C:\Users\Sroor For Laptop\Desktop\project2\Angular-food-project\src\assets\bg-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Take full height of parent */
+}
+
+.container h1 {
+  color: white;
+ 
+}
+  
+  /* CSS for the right content section */
+  .right-content {
+    padding: 20px;
+  }
+  
+  .right-content h1 {
+    font-size: 24px;
+  }
+  
+  .read-more-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .read-more-btn:hover {
+    background-color: black;
+  }
+  
+  /* CSS for the info boxes */
+  .info-box-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-box {
+    width: calc(50% - 10px); /* Adjust width and margin to create space */
+    padding: 20px;
+    background-color: white;
+    border: 2px solid transparent; /* Transparent border */
+    color: black;
+    position: relative; /* Ensure positioning works correctly */
+  }
+  
+  .info-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 6px; /* Adjust the width of the colored border */
+    background-color: orange; /* Set the color of the border */
+    left: -8px; /* Adjust to position the border on the left side */
+  }
+  
+  /* CSS for the picture grid */
+  .picture-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .picture-grid img {
+    width: 45%;
+    margin: 5px;
+    animation: slideIn 0.5s ease-in-out; /* Animation for displaying pictures */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .picture-grid img:nth-child(1) {
+    animation: slideIn 0.5s ease-in-out 0.5s forwards; /* Delay the animation for the first image */
+  }
+  
+  .picture-grid img:nth-child(2) {
+    animation: slideIn 0.5s ease-in-out 1s forwards; /* Delay the animation for the second image */
+  }
+  
+  .picture-grid img:nth-child(3) {
+    animation: slideIn 0.5s ease-in-out 1.5s forwards; /* Delay the animation for the third image */
+  }
+  
+  .picture-grid img:nth-child(4) {
+    animation: slideIn 0.5s ease-in-out 2s forwards; /* Delay the animation for the fourth image */
+  }
+  .container {
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col-md-3 {
+    flex: 1;
+  }
+  
+  .card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: orange;
+    color: white;
+}
+
+.card i {
+    font-size: 45px;
+    color: orange;
+}
+
+.card:hover i {
+    color: white;
+}
+
+.card h1 {
+    color: black;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.card:hover h1 {
+    color: white;
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+    

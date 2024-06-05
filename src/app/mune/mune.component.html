@@ -1,0 +1,81 @@
+<div class="about-us"style="height: 500px;">
+    <div class="background-image"></div>
+    <div class="container">
+      <h1 style="    justify-content: center;
+      padding-top: 250px;
+      font-size: 100px;
+      font-family: revert;
+      font-weight: 600;">Menu</h1>
+      <!-- Other content of the About Us section -->
+    </div>
+  </div>
+  <div class="container">
+  
+    <div class="contact-header">
+      <span class="line"></span>
+      <h5 >Food Menu</h5>
+      <span class="line"></span>
+    </div>
+    <h1 class="title" style="    color: black;
+    font-size: 45px;
+    font-family: cursive;
+    font-weight: 400;
+">MOST Popular Items</h1>
+    <!-- <div class="menu" style="color: orange ; font-size: 25px;">
+        <div class="item breakfast">
+            <i class="fas fa-coffee"></i>
+            <span class="item-name">Breakfast</span>
+        </div>
+        <div class="item lunch">
+            <i class="fas fa-utensils"></i>
+            <span class="item-name">Lunch</span>
+        </div>
+        <div class="item dinner">
+            <i class="fas fa-utensils"></i>
+            <span class="item-name">Dinner</span>
+        </div>
+    </div>
+</div>
+<br> -->
+
+<div class="container" style="margin-top: 60px;">
+  <div class="row">
+    <div *ngFor="let item of menu; let i = index" class="col-md-4">
+      <div class="card mb-4">
+        <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+          <img [src]="item.image" alt="Meal Image" class="img-fluid card-img-top" style="height: 200px; object-fit: cover;">
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a>{{ item.name }}</a></h5>
+          <ul class="list-unstyled list-inline mb-0">
+            <!-- Add star rating here -->
+          </ul>
+         
+          <p class="card-text">
+            {{ item.description }}
+          </p>
+          <hr class="my-4" />
+          <p class="lead"><strong>Tonight's availability</strong></p>
+          <ul class="list-unstyled list-inline d-flex justify-content-between" style="margin-bottom: 0;">
+            <li class="list-inline-item" (click)="selectTime('5:30PM', i)">
+              <div class="chip" [class.selected]="item.selectedTime === '5:30PM'">5:30PM</div>
+            </li>
+            <li class="list-inline-item" (click)="selectTime('7:30PM', i)">
+              <div class="chip" [class.selected]="item.selectedTime === '7:30PM'">7:30PM</div>
+            </li>
+            <li class="list-inline-item" (click)="selectTime('8:00PM', i)">
+              <div class="chip" [class.selected]="item.selectedTime === '8:00PM'">8:00PM</div>
+            </li>
+            <li class="list-inline-item" (click)="selectTime('9:00PM', i)">
+              <div class="chip" [class.selected]="item.selectedTime === '9:00PM'">9:00PM</div>
+            </li>
+          </ul>
+          <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">{{ item.price | currency:'USD':'symbol':'1.2-2' }}  {{ item.cuisine }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

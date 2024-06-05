@@ -1,0 +1,171 @@
+.about-us {
+    position: relative;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('C:\Users\Sroor For Laptop\Desktop\project2\Angular-food-project\src\assets\bg-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the background is behind the content */
+    opacity: 0.5; /* Set opacity level */
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the background */
+    text-align: center; /* Center align the content */
+    padding: 20px; /* Add padding to the container */
+  }
+  
+  .container h1 {
+    color: white; /* Set the color of the heading */
+    font-size: 24px; /* Adjust font size */
+  }
+  .map-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .map-link:hover {
+    transform: scale(1.05);
+  }
+  
+  .map-link img {
+    width: 600px;
+    height: auto;
+  }
+  /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+/*   
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  } */
+  
+  /* Headings */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact section */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info .col {
+    flex-basis: 30%;
+    text-align: center;
+ 
+  }
+
+  
+  .contact-info i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+
+
+ 
+  
+  .contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  
+  .contact-header .line {
+ 
+    flex-grow: 0.1;
+    height: 1px;
+    background-color: orange;
+    margin: 0 20}
+  
+  .contact-header h5 {
+  
+    font-style: italic;
+    color:orange;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 20px;
+    text-transform: uppercase;
+  }
+  /* Map and form section */
+  .map-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .map-form .col {
+    flex-basis: 48%;
+  }
+  
+  .map-form .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .map-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .map-form .btn-primary:hover {
+    background-color: #f2f7fc;
+    border-color: #004a9b;
+  }
+  .divider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .divider-line {
+  
+    border-top: 3px solid #ff8c00;
+    border-radius: 2px;
+    flex-grow: 0.1;
+  }
+  
+  .text-center > span {
+    background-color: inherit;
+   
+    position: relative;
+    z-index: 1;
+  }
+  
+  .icon-orange {
+    color: #ff8c00;
+  }
+  
+  .text-center {
+    font-family: 'Beautiful Font', sans-serif;
+  }

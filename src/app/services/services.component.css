@@ -1,0 +1,83 @@
+.about-us {
+  position: relative;
+  height: 100vh; /* Set height to viewport height for full screen */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('C:\Users\Sroor For Laptop\Desktop\project2\Angular-food-project\src\assets\bg-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Take full height of parent */
+}
+
+.container h1 {
+  color: white;
+ 
+}
+  .container {
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col-md-3 {
+    flex: 1;
+  }
+  
+  .card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: orange;
+    color: white;
+}
+
+.card i {
+    font-size: 45px;
+    color: orange;
+}
+
+.card:hover i {
+    color: white;
+}
+
+.card h1 {
+    color: black;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.card:hover h1 {
+    color: white;
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 10px;
+}

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Login form styles */
+  .login-container {
+    text-align: center;
+  }
+  
+  .restaurant-icon {
+    color: orange !important; /* Set the color of the icon */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .login-container form {
+    margin-bottom: 2rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 2px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  label {
+    font-size: 20px; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    color: #333; /* Set the color */
+    margin-bottom: 0.5rem; /* Add margin bottom */
+    display: block; /* Ensure each label is displayed on a new line */
+    font-family: cursive;
+  }
+  
+  /* Example of hover effect */
+  label:hover {
+    color: #ff6347; /* Change color on hover */
+  }
+  
+  /* Example of focus effect */
+  label:focus-within {
+    color: #4682b4; /* Change color on focus */
+    font-weight: normal; /* Change font weight on focus */
+  }
